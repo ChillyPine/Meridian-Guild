@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "meridian_guild",
+	"version": "${version}",
+	"name": "Meridian Guild",
+	"description": "Addon for Meridian that adds guild features.",
+	"authors": [
+		"ChillyPine"
+	],
+	"contact": {
+		"sources": "https://github.com/ChillyPine/meridian-guild"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "io.github.meridian.guild.MeridianGuild",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"meridian": ">=1.1.0",
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-language-kotlin": "*"
+	}
+}
