@@ -5,6 +5,8 @@ import net.fabricmc.api.ClientModInitializer
 
 object MeridianGuild : ClientModInitializer {
     override fun onInitializeClient() {
+        FeatureManager.register(GuildBridgeReformat)
+
         // Meridian already ran load() before this entrypoint, so re-load to pick up our features' saved state.
         FeatureManager.load()
     }
